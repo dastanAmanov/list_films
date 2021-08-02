@@ -1,20 +1,12 @@
 let films = [
 	{
-		id: '287947',
-		title: 'Shazam!',
-		poster: 'https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg',
-		overview:
-			'A boy is given the ability to become an adult superhero in times of need with a single magic word.',
-		release_date: 1627500000000,
-		genres: ['Action', 'Comedy', 'Fantasy',],
-	},
-	{
 		id: '299537',
 		title: 'Captain Marvel',
 		poster: 'https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg',
 		overview:
 			'The story follows Carol Danvers as she becomes one of the universe’s most powerful heroes when Earth is caught in the middle of a galactic war between two alien races. Set in the 1990s, Captain Marvel is an all-new adventure from a previously unseen period in the history of the Marvel Cinematic Universe.',
 		release_date: 1627400000000,
+		raiting: 6,
 		genres: ['Action', 'Adventure', 'Science Fiction'],
 	},
 	{
@@ -24,6 +16,7 @@ let films = [
 		overview:
 			'Six strangers find themselves in circumstances beyond their control, and must use their wits to survive.',
 		release_date: 1627500000000,
+		raiting: 5,
 		genres: ['Thriller', 'Action', 'Horror', 'Science Fiction'],
 	},
 	{
@@ -33,6 +26,7 @@ let films = [
 		overview:
 			'As Hiccup fulfills his dream of creating a peaceful dragon utopia, Toothless’ discovery of an untamed, elusive mate draws the Night Fury away. When danger mounts at home and Hiccup’s reign as village chief is tested, both dragon and rider must make impossible decisions to save their kind.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Animation', 'Family', 'Adventure'],
 	},
 	{
@@ -42,6 +36,7 @@ let films = [
 		overview:
 			'In a series of escalating encounters, security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men.',
 		release_date: 1627400000000,
+		raiting: 9,
 		genres: ['Documentary'],
 	},
 	{
@@ -51,6 +46,7 @@ let films = [
 		overview:
 			"The story is based on Robert Louis Stevenson's Treasure Island novel.",
 		release_date: 1627500000000,
+		raiting: 5,
 		genres: ['Animation'],
 	},
 	{
@@ -60,6 +56,7 @@ let films = [
 		overview:
 			'A young elephant, whose oversized ears enable him to fly, helps save a struggling circus, but when the circus plans a new venture, Dumbo and his friends discover dark secrets beneath its shiny veneer.',
 		release_date: 1627400000000,
+		raiting: 10,
 		genres: ['Adventure', 'Family', 'Fantasy'],
 	},
 	{
@@ -69,6 +66,7 @@ let films = [
 		overview:
 			'As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.',
 		release_date: 1627400000000,
+		raiting: 4,
 		genres: ['Adventure', 'Action', 'Science Fiction'],
 	},
 	{
@@ -78,6 +76,7 @@ let films = [
 		overview:
 			'Husband and wife Gabe and Adelaide Wilson take their kids to their beach house expecting to unplug and unwind with friends. But as night descends, their serenity turns to tension and chaos when some shocking visitors arrive uninvited.',
 		release_date: 1627400000000,
+		raiting: 4,
 		genres: ['Documentary', 'Family'],
 	},
 	{
@@ -87,6 +86,7 @@ let films = [
 		overview:
 			'On the run in the year 1987, Bumblebee finds refuge in a junkyard in a small Californian beach town. Charlie, on the cusp of turning 18 and trying to find her place in the world, discovers Bumblebee, battle-scarred and broken.  When Charlie revives him, she quickly learns this is no ordinary yellow VW bug.',
 		release_date: 1627400000000,
+		raiting: 8,
 		genres: ['Action', 'Adventure', 'Science Fiction'],
 	},
 	{
@@ -96,6 +96,7 @@ let films = [
 		overview:
 			"Lightning McQueen, a hotshot rookie race car driven to succeed, discovers that life is about the journey, not the finish line, when he finds himself unexpectedly detoured in the sleepy Route 66 town of Radiator Springs. On route across the country to the big Piston Cup Championship in California to compete against two seasoned pros, McQueen gets to know the town's offbeat characters.",
 		release_date: 1627400000000,
+		raiting: 4,
 		genres: ['Animation', 'Adventure', 'Comedy', 'Family'],
 	},
 	{
@@ -105,6 +106,7 @@ let films = [
 		overview:
 			"After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store.",
 		release_date: 1627400000000,
+		raiting: 6,
 		genres: ['Adventure', 'Science Fiction', 'Action'],
 	},
 	{
@@ -114,6 +116,7 @@ let films = [
 		overview:
 			"Miles Morales is juggling his life between being a high school student and being a spider-man. When Wilson 'Kingpin' Fisk uses a super collider, others from across the Spider-Verse are transported to this dimension.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Action', 'Adventure', 'Animation', 'Science Fiction', 'Comedy'],
 	},
 	{
@@ -123,7 +126,18 @@ let films = [
 		overview:
 			"Louis Creed, his wife Rachel and their two children Gage and Ellie move to a rural home where they are welcomed and enlightened about the eerie 'Pet Sematary' located nearby. After the tragedy of their cat being killed by a truck, Louis resorts to burying it in the mysterious pet cemetery, which is definitely not as it seems, as it proves to the Creeds that sometimes dead is better.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Thriller', 'Horror'],
+	},
+	{
+		id: '287947',
+		title: 'Shazam!',
+		poster: 'https://image.tmdb.org/t/p/w500/xnopI5Xtky18MPhK40cZAGAOVeV.jpg',
+		overview:
+			'A boy is given the ability to become an adult superhero in times of need with a single magic word.',
+		release_date: 1627500000000,
+		raiting: 7,
+		genres: ['Action', 'Comedy', 'Fantasy',],
 	},
 	{
 		id: '456740',
@@ -132,6 +146,7 @@ let films = [
 		overview:
 			"Hellboy comes to England, where he must defeat Nimue, Merlin's consort and the Blood Queen. But their battle will bring about the end of the world, a fate he desperately tries to turn away.",
 		release_date: 1627400000000,
+		raiting: 8,
 		genres: ['Fantasy', 'Action'],
 	},
 	{
@@ -141,6 +156,7 @@ let films = [
 		overview:
 			'A young woman falls for a guy with a dark secret and the two embark on a rocky relationship.',
 		release_date: 1627400000000,
+		raiting: 4,
 		genres: ['Mystery', 'Drama'],
 	},
 	{
@@ -148,8 +164,9 @@ let films = [
 		title: 'Redcon-1',
 		poster: 'https://image.tmdb.org/t/p/w500/vVPrWngVJ2cfYAncBedQty69Dlf.jpg',
 		overview:
-			'After a zombie apocalypse spreads from a London prison, the UK is brought to its knees. The spread of the virus is temporarily contained but, without a cure, it’s only a matter of time before it breaks its boundaries and the biggest problem of all… any zombies with combat skills are now enhanced. With the South East of England quarantined from the rest of the world using fortified borders, intelligence finds that the scientist responsible for the outbreak is alive and well in London. With his recovery being the only hope of a cure, a squad of eight Special Forces soldiers is sent on a suicide mission to the city, now ruled by the undead, with a single task: get him out alive within 72 hours by any means necessary. What emerges is an unlikely pairing on a course to save humanity against ever-rising odds.',
+			'After a zombie apocalypse spreads from a London prison, the UK is brought to its knees. The spread of the virus is temporarily contained but, without a cure, it’s only a matter of time before it breaks its boundaries and the biggest problem of all… any zombies with combat skills are now enhanced. With the South East of England quarantined from the rest of the world using fortified borders, intelligence finds that the scientist responsible for the outbreak is alive and well in London.',
 		release_date: 1627400000000,
+		raiting: 10,
 		genres: ['Action', 'Horror'],
 	},
 	{
@@ -159,6 +176,7 @@ let films = [
 		overview:
 			'Erin Bell is an LAPD detective who, as a young cop, was placed undercover with a gang in the California desert with tragic results. When the leader of that gang re-emerges many years later, she must work her way back through the remaining members and into her own history with them to finally reckon with the demons that destroyed her past.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Horror', 'Thriller'],
 	},
 	{
@@ -168,6 +186,7 @@ let films = [
 		overview:
 			"In Depression-era London, a now-grown Jane and Michael Banks, along with Michael's three children, are visited by the enigmatic Mary Poppins following a personal loss. Through her unique magical skills, and with the aid of her friend Jack, she helps the family rediscover the joy and wonder missing in their lives.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Documentary'],
 	},
 	{
@@ -177,6 +196,7 @@ let films = [
 		overview:
 			"Once home to the most advanced civilization on Earth, Atlantis is now an underwater kingdom ruled by the power-hungry King Orm. With a vast army at his disposal, Orm plans to conquer the remaining oceanic people and then the surface world. Standing in his way is Arthur Curry, Orm's half-human, half-Atlantean brother and true heir to the throne.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Action', 'Adventure', 'TV Movie'],
 	},
 	{
@@ -186,6 +206,7 @@ let films = [
 		overview:
 			"Collegian Tree Gelbman wakes up in horror to learn that she's stuck in a parallel universe. Her boyfriend Carter is now with someone else, and her friends and fellow students seem to be completely different versions of themselves. When Tree discovers that Carter's roommate has been altering time, she finds herself once again the target of a masked killer. When the psychopath starts to go after her inner circle, Tree soon realizes that she must die over and over again to save everyone.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Comedy', 'Horror', 'Science Fiction'],
 	},
 	{
@@ -195,6 +216,7 @@ let films = [
 		overview:
 			"Theatrical-release adaptation of the visual novel 'Fate/stay night', following the third and final route. (Part 2 of a trilogy.)",
 		release_date: 1627400000000,
+		raiting: 6,
 		genres: ['Animation', 'Action', 'Fantasy', 'Drama'],
 	},
 	{
@@ -204,6 +226,7 @@ let films = [
 		overview:
 			'In 1934, Frank Hamer and Manny Gault, two former Texas Rangers, are commissioned to put an end to the wave of vicious crimes perpetrated by Bonnie Parker and Clyde Barrow, a notorious duo of infamous robbers and cold-blooded killers who nevertheless are worshiped by the public.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Music'],
 	},
 	{
@@ -213,6 +236,7 @@ let films = [
 		overview:
 			'Old-school magic meets the modern world when young Alex stumbles upon the mythical sword Excalibur. He soon unites his friends and enemies, and they become knights who join forces with the legendary wizard Merlin. Together, they must save mankind from the wicked enchantress Morgana and her army of supernatural warriors.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Action', 'Adventure', 'Fantasy', 'Family'],
 	},
 	{
@@ -222,6 +246,7 @@ let films = [
 		overview:
 			"In the world of Sougo Tokiwa and Sento Kiryu, their 'companions' are losing their memories one after the other as they're replaced by other people. The Super Time Jacker, Tid , appears before them. He orders his powerful underlings, Another Double and Another Den-O, to pursue a young boy called Shingo. While fighting to protect Shingo, Sougo meets Ataru, a young man who loves Riders, but Ataru says that Kamen Riders aren't real. What is the meaning of those words? While the mystery deepens, the true enemy that Sougo and Sento must defeat appears in the Kuriogatake mountain...",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Action', 'Adventure', 'Science Fiction'],
 	},
 	{
@@ -231,6 +256,7 @@ let films = [
 		overview:
 			"Video game bad guy Ralph and fellow misfit Vanellope von Schweetz must risk it all by traveling to the World Wide Web in search of a replacement part to save Vanellope's video game, 'Sugar Rush.' In way over their heads, Ralph and Vanellope rely on the citizens of the internet -- the netizens -- to help navigate their way, including an entrepreneur named Yesss, who is the head algorithm and the heart and soul of trend-making site BuzzzTube.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Family', 'Animation', 'Comedy', 'Adventure'],
 	},
 	{
@@ -240,6 +266,7 @@ let films = [
 		overview:
 			'Gellert Grindelwald has escaped imprisonment and has begun gathering followers to his cause—elevating wizards above all non-magical beings. The only one capable of putting a stop to him is the wizard he once called his closest friend, Albus Dumbledore. However, Dumbledore will need to seek help from the wizard who had thwarted Grindelwald once before, his former student Newt Scamander, who agrees to help, unaware of the dangers that lie ahead. Lines are drawn as love and loyalty are tested, even among the truest friends and family, in an increasingly divided wizarding world.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Adventure', 'Fantasy', 'Family'],
 	},
 	{
@@ -249,6 +276,7 @@ let films = [
 		overview:
 			'When Alita awakens with no memory of who she is in a future world she does not recognize, she is taken in by Ido, a compassionate doctor who realizes that somewhere in this abandoned cyborg shell is the heart and soul of a young woman with an extraordinary past.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Action', 'Science Fiction'],
 	},
 	{
@@ -258,6 +286,7 @@ let films = [
 		overview:
 			'After being defeated by Ip Man, Cheung Tin Chi is attempting to keep a low profile. While going about his business, he gets into a fight with a foreigner by the name of Davidson, who is a big boss behind the bar district. Tin Chi fights hard with Wing Chun and earns respect.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Action'],
 	},
 	{
@@ -267,6 +296,7 @@ let films = [
 		overview:
 			'Earl Stone, a man in his 80s who is broke, alone, and facing foreclosure of his business when he is offered a job that simply requires him to drive. Easy enough, but, unbeknownst to Earl, he’s just signed on as a drug courier for a Mexican cartel. He does so well that his cargo increases exponentially, and Earl hit the radar of hard-charging DEA agent Colin Bates.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Crime', 'Comedy'],
 	},
 	{
@@ -276,6 +306,7 @@ let films = [
 		overview:
 			'Following a fall during mistletoe picking, Druid Getafix decides that it is time to secure the future of the village. Accompanied by Asterix and Obelix, he undertakes to travel the Gallic world in search of a talented young druid to transmit the Secret of the Magic Potion.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Animation', 'Family', 'Comedy', 'Adventure'],
 	},
 	{
@@ -285,6 +316,7 @@ let films = [
 		overview:
 			'Light years from Earth, 26 years after being abducted, Peter Quill finds himself the prime target of a manhunt after discovering an orb wanted by Ronan the Accuser.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['fantasy' ],
 	},
 	{
@@ -294,6 +326,7 @@ let films = [
 		overview:
 			'Professor James Murray begins work compiling words for the first edition of the Oxford English Dictionary in the mid 19th century and receives over 10,000 entries from a patient at Broadmoor Criminal Lunatic Asylum , Dr William Minor.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Drama', 'History', 'Mystery', 'Thriller'],
 	},
 	{
@@ -303,6 +336,7 @@ let films = [
 		overview:
 			'Seventeen-year-old Stella spends most of her time in the hospital as a cystic fibrosis patient. Her life is full of routines, boundaries and self-control -- all of which get put to the test when she meets Will, an impossibly charming teen who has the same illness.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Romance', 'Drama'],
 	},
 	{
@@ -312,6 +346,7 @@ let films = [
 		overview:
 			"As one of the youngest Planned Parenthood clinic directors in the nation, Abby Johnson was involved in upwards of 22,000 abortions and counseled countless women on their reproductive choices. Her passion surrounding a woman's right to choose led her to become a spokesperson for Planned Parenthood, fighting to enact legislation for the cause she so deeply believed in. Until the day she saw something that changed everything.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Drama'],
 	},
 	{
@@ -321,6 +356,7 @@ let films = [
 		overview:
 			"The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Action', 'Adventure', 'Comedy', 'Science Fiction'],
 	},
 	{
@@ -330,6 +366,7 @@ let films = [
 		overview:
 			'A joyous family reunion becomes a hilarious nightmare as Madea and the crew travel to backwoods Georgia, where they find themselves unexpectedly planning a funeral that might unveil unpleasant family secrets.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Comedy'],
 	},
 	{
@@ -339,6 +376,7 @@ let films = [
 		overview:
 			'Many thousands of years in the future, Earth’s cities roam the globe on huge wheels, devouring each other in a struggle for ever diminishing resources. On one of these massive traction cities, the old London, Tom Natsworthy has an unexpected encounter with a mysterious young woman from the wastelands who will change the course of his life forever.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Adventure', 'Fantasy'],
 	},
 	{
@@ -348,6 +386,7 @@ let films = [
 		overview:
 			'Kuppathu Raja is an upcoming Tamil comedy drama film directed by Baba Bhaskar. The film features G. V. Prakash Kumar and Parthiban in the lead roles.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Drama'],
 	},
 	{
@@ -357,6 +396,7 @@ let films = [
 		overview:
 			'When an unexpected enemy emerges and threatens global safety and security, Nick Fury, director of the international peacekeeping agency known as S.H.I.E.L.D., finds himself in need of a team to pull the world back from the brink of disaster. Spanning the globe, a daring recruitment effort begins!',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Documentary'],
 	},
 	{
@@ -366,6 +406,7 @@ let films = [
 		overview:
 			'Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Adventure', 'Fantasy', 'Action'],
 	},
 	{
@@ -375,6 +416,7 @@ let films = [
 		overview:
 			"Harry Potter has lived under the stairs at his aunt and uncle's house his whole life. But on his 11th birthday, he learns he's a powerful wizard -- with a place waiting for him at the Hogwarts School of Witchcraft and Wizardry. As he learns to harness his newfound powers with the help of the school's kindly headmaster, Harry uncovers the truth about his parents' deaths -- and about the villain who's to blame.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Adventure', 'Fantasy', 'Family'],
 	},
 	{
@@ -383,6 +425,7 @@ let films = [
 		poster: 'https://image.tmdb.org/t/p/w500/x5MSMGVagNINIWyZaxdjLarTDM3.jpg',
 		overview: 'A vigilante helps victims escape their domestic abusers.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Thriller', 'Drama'],
 	},
 	{
@@ -392,6 +435,7 @@ let films = [
 		overview:
 			'Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his home-world and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela.',
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Action', 'Adventure', 'Comedy', 'Fantasy'],
 	},
 	{
@@ -401,6 +445,7 @@ let films = [
 		overview:
 			"Singer Freddie Mercury, guitarist Brian May, drummer Roger Taylor and bass guitarist John Deacon take the music world by storm when they form the rock 'n' roll band Queen in 1970. Hit songs become instant classics. When Mercury's increasingly wild lifestyle starts to spiral out of control, Queen soon faces its greatest challenge yet – finding a way to keep the band together amid the success and excess.",
 		release_date: 1627400000000,
+		raiting: 7,
 		genres: ['Music', 'Documentary'],
 	},
 ];
@@ -412,41 +457,52 @@ films.forEach(param => {
 	let overviewText = document.createElement("p");
 	let releaseDate = document.createElement("p");
 	let genres = document.createElement("p");
-	
+	let lineBg = document.createElement("div");
+    let lineFront = document.createElement("div");
+    let title = document.createElement("span");
+
 	let date = new Date(param.release_date);
 	let year = date.getFullYear()
 	let month = String(date.getMonth()).padStart(2, "0");
 	let day = date.getDate()
     let relData = (`${year}.${month}.${day}`);
-
+	
 	newHeader.textContent = param.title;
 	newImg.setAttribute("src", param.poster);
 	newImg.setAttribute("width", "300px");
-	newHeader.setAttribute("class", "title");
-	overviewText.setAttribute("class", "subtitle");
-	releaseDate.setAttribute("class", "date");
-	genres.setAttribute("class", "genres")
+	newHeader.className = "title";
+	overviewText.className = "subtitle";
+	releaseDate.className = "date";
+	genres.className = "genres"
+	lineBg.className = "line";
+    lineFront.className = "underline";
 	overviewText.textContent = param.overview;
 	releaseDate.textContent = relData;
 	genres.textContent = param.genres;
+	
+	lineFront.style.width = (Math.ceil(param.raiting *100) / 10) + `%`;
+	title.textContent = `Raiting: ${param.raiting}/10`;
 	
 	list.appendChild(newLi);
 	newLi.appendChild(newImg);
 	newLi.appendChild(newHeader);
 	newLi.appendChild(overviewText);
 	newLi.appendChild(releaseDate);
+	newLi.appendChild(title);
+    newLi.appendChild(lineBg);
+    lineBg.appendChild(lineFront);
 	newLi.appendChild(genres);
-	
-let elForm = document.querySelector("#form");
-let elOption = elForm.querySelector("#select");
 
-elForm.addEventListener("submit", evt =>{
+	
+form.addEventListener("submit", evt =>{
 	evt.preventDefault()
-	if(param.genres.includes(elOption.value)){
+	
+	if(param.genres.includes(option.value)){
 		newLi.style.display = "block";
 	}
 	else{
 		newLi.style.display = "none";
+
 	}
  });
 });

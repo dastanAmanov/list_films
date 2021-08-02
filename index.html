@@ -9,13 +9,13 @@
 </head>
 <body>
     <form id="form" class="form">
-        <select id="select" class="select">
+        <select id="option">
             <option value="Comedy">Comedy</option>
             <option value="Drama">Drama</option>
             <option value="Action">Action</option>
             <option value="Adventure">Adventure</option>
             <option value="Fantasy">Fantasy</option>
-            <option value="Music">Music </option>
+            <option value="Music">Music</option>
             <option value="Documentary">Documentary</option>
             <option value="Thriller">Thriller</option>
             <option value="Family">Family</option>
@@ -28,9 +28,11 @@
             <option value="Animation">Animation</option>
         </select>
         <br>
-        <button type="submit" class="btn">Submit</button>
+        <button type="submit" class="btn">Search</button>
     </form>
-    <ul id="list"></ul>
+    <div class="container">
+        <ul id="list" class="list"></ul>
+    </div>
     <script src="./films.js"></script>
 </body>
 </html>
