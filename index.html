@@ -9,9 +9,9 @@
 </head>
 <body>
     <form id="form" class="form">
-        <select id="movie__filter" class="option">
+        <!-- <select id="movie__filter" class="option">
             <option value="All">All</option>
-        </select>
+        </select> -->
 
         <select id="movie_genre" class="option">
             <option value="All">All</option>
@@ -22,6 +22,24 @@
     </form>
     <div class="container">
         <ul id="list" class="list"></ul>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal_content">
+            <div class="block_info">
+                <img id="modalimg" class="modalimg" src="" alt="poster">
+                <div class="box_info">
+                    <h2 class="modal_title"></h2>
+                    <span class="descrip_title">Overview</span>
+                    <p class="modal_description"></p>
+                    <h3 id="modalraiting" class="modal_raiting"></h3>
+                    <div class="modal_line">
+                        <div id="raitingline" class="modal_underline"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <button id="close" class="close_btn">Close</button>
+        </div>
     </div>
     <script src="./utils.js"></script>
     <script src="./films.js"></script>

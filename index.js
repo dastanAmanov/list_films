@@ -2,6 +2,9 @@ let elForm = MakeElem("#form");
 let movieList = MakeElem("#list")
 let movieGenre = MakeElem("#movie_genre")
 let movieSearch = MakeElem("#movie_search")
+let closee = MakeElem("#close")
+let modDescrip = MakeElem(".modal_description")
+let modTitle = MakeElem(".modal_title")
 
 
 function renderGenersSelect(films, element){
@@ -38,8 +41,7 @@ function render(arrFilm, element){
     let lineFront = CreateDom("div")
     let newGenres = CreateDom("p")
     let newOverview = CreateDom("p") 
-    let openModal = CreateDom("button")
-    let modal = CreateDom("div") 
+    let openModal = CreateDom("button") 
     
     newLi.setAttribute("class" , "movie__item")
     newImg.setAttribute("src", film.poster)
@@ -53,7 +55,6 @@ function render(arrFilm, element){
     newGenres.setAttribute("class", "genres")
     newOverview.setAttribute("class", "subtitle")
     openModal.setAttribute("class", "open_modal")
-    modal.setAttribute("class", "modal")
 
     let date = new Date(film.release_date)
         let year = date.getFullYear()
@@ -64,33 +65,15 @@ function render(arrFilm, element){
     lineFront.style.width = (Math.ceil(film.raiting *100) / 10) + `%`
 
 
-    openModal.addEventListener("click", ()=>{
-        modal.style.display = "block"
-        openModal.style.display = "none"
-        newTime.style.display = "none"
-        newRaiting.style.display = "none"
-        lineBg.style.display = "none"
-        newGenres.style.display = "none"
-        newHeader.style.marginTop = "100px"
-
-        })
-    modal.addEventListener("click", ()=>{
-        modal.style.display = "none"
-        openModal.style.display = "inline"
-        newTime.style.display = "inline"
-        newRaiting.style.display = "block"
-        lineBg.style.display = "block"
-        newGenres.style.display = "block"
-        newHeader.style.marginTop = "0"
-    })
-
-
+    
+    
     newHeader.textContent = film.title
     newGenres.textContent = film.genres
     newTime.textContent = releDate
     newRaiting.textContent = `Raiting: ${film.raiting}/10`
     newOverview.textContent = film.overview
-    openModal.innerHTML = "more..."
+    openModal.textContent = "more..."
+    openModal.dataset.uuid = film.id
     
 
     newLi.appendChild(newImg)
@@ -100,11 +83,30 @@ function render(arrFilm, element){
     lineBg.appendChild(lineFront)
     newLi.appendChild(lineBg)
     newLi.appendChild(openModal)
-    newLi.appendChild(modal)
-    modal.appendChild(newOverview)
     newLi.appendChild(newGenres)
     movieList.appendChild(newLi)
-    })
+    
+
+        openModal.addEventListener("click", (e)=>{
+            let filmId = e.target.dataset.uuid
+            let x = arrFilm.find((e)=> filmId == e.id)
+            modalimg.setAttribute("src", x.poster)
+            modTitle.textContent = x.title
+            modDescrip.textContent = x.overview
+            modalraiting.textContent = `Raiting: ${x.raiting}/10`
+            raitingline.style.width = (Math.ceil(x.raiting * 100) / 10)+`%`
+
+            modal.classList.add("active") 
+        });
+        closee.addEventListener("click", (e)=>{
+            modal.classList.remove("active") 
+        });
+        window.addEventListener("click", (e)=>{ 
+            if(e.target == modal)
+            modal.classList.remove("active")
+        });
+    });
+    
 }
 render(films, movieList)
 
