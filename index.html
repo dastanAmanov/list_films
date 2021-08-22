@@ -9,9 +9,6 @@
 </head>
 <body>
     <form id="form" class="form">
-        <!-- <select id="movie__filter" class="option">
-            <option value="All">All</option>
-        </select> -->
 
         <select id="movie_genre" class="option">
             <option value="All">All</option>
@@ -37,10 +34,22 @@
                     </div>
                 </div>
             </div>
-            
             <button id="close" class="close_btn">Close</button>
         </div>
     </div>
+    <template>
+        <li class="movie__item">
+            <img src="" alt="photo">
+            <h2 class="movie-title"></h2>
+            <time class="date">2021.20.27</time>
+            <p class="raiting_title">raiting</p>
+            <div class="line">
+                <div class="underline"></div>
+            </div>
+            <button>more...</button>
+            <p class="genres">Action</p>
+        </li>
+    </template>
     <script src="./utils.js"></script>
     <script src="./films.js"></script>
     <script src="index.js"></script>
