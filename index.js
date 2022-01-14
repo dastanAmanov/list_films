@@ -65,8 +65,6 @@ function render(arrFilm, element){
         lineFront.style.width = (Math.ceil(film.raiting *100) / 10) + `%`
         
         
-        
-        
         newHeader.textContent = film.title
         newGenres.textContent = film.genres
         newTime.textContent = releDate
